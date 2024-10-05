@@ -10,8 +10,24 @@
   <style>
     /* Stil for billeder (inkl. avatars) */
     .avatar {
-      width: 15px;   /* Sæt bredde til 15px */
-      height: 15px;  /* Sæt højde til 15px */
+      width: 18px;   /* 20% større end før (15px * 1.2 = 18px) */
+      height: 18px;  /* 20% større */
+      border-radius: 50%; /* Gør billedet rundt */
+    }
+
+    /* Baggrundsfarve til TikTok-knappen */
+    .button.button-Tiktok {
+      color: #FFFFFF;
+      background-color: #69C9D0; /* TikTok's primære farve */
+    }
+    .button.button-Tiktok:focus,
+    .button.button-Tiktok:hover {
+      filter: brightness(90%);
+    }
+
+    /* Baggrundsfarve til hele siden */
+    body {
+      background: linear-gradient(135deg, #141e30, #243b55); /* To farver der fader ud i hinanden */
     }
   </style>
 </head>
@@ -19,7 +35,7 @@
   <div class="container">
     <div class="row">
       <div class="column" style="margin-top: 10%">
-        <!-- Første avatar med 15x15 størrelse -->
+        <!-- Første avatar med 18x18 størrelse og rundt -->
         <img src="images/avatar.png" alt="Millalot" class="avatar">
         <h1>Millalot</h1>
         <p>Find mig på sociale medier</p>
