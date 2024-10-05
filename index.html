@@ -10,24 +10,77 @@
   <style>
     /* Stil for billeder (inkl. avatars) */
     .avatar {
-      width: 175px;   /* 20% større end før (15px * 1.2 = 18px) */
-      height: 175px;  /* 20% større */
+      width: 175px; /* 20% større end før */
+      height: 175px;
       border-radius: 50%; /* Gør billedet rundt */
     }
 
-    /* Baggrundsfarve til TikTok-knappen */
-    .button.button-Tiktok {
-      color: #FFFFFF;
-      background-color: #69C9D0; /* TikTok's primære farve */
-    }
-    .button.button-Tiktok:focus,
-    .button.button-Tiktok:hover {
-      filter: brightness(90%);
+    /* Stil for ikonene */
+    .icon {
+      width: 30px; /* Fast bredde for ikoner */
+      height: 30px; /* Fast højde for ikoner */
+      vertical-align: middle; /* Justerer ikonerne med teksten */
     }
 
-    /* Baggrundsfarve til hele siden */
+    /* Resten af din eksisterende CSS */
     body {
-      background: linear-gradient(135deg, #141e30, #243b55); /* To farver der fader ud i hinanden */
+      background: linear-gradient(135deg, #9B59B6, #3498DB); /* Lilla til pastelblå baggrund */
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #FFFFFF;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 64px;
+    }
+
+    @media (min-width: 550px) {
+      h1 {
+        font-size: 48px;
+        line-height: 96px;
+      }
+    }
+
+    /* Knappestil for sociale medier */
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      height: 48px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 18px;
+      width: 300px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: 0.1px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .button.button-discord {
+      background-color: #5865F2;
+      color: #FFFFFF;
+    }
+
+    .button.button-Tiktok {
+      background-color: #69C9D0;
+      color: #FFFFFF;
+    }
+
+    .button.button-instagram {
+      background-image: linear-gradient(-135deg, #1400c8, #b900b4, #f50000);
+      color: #FFFFFF;
+    }
+
+    .button.button-twitch {
+      background-color: #9146ff;
+      color: #FFFFFF;
     }
   </style>
 </head>
@@ -35,14 +88,22 @@
   <div class="container">
     <div class="row">
       <div class="column" style="margin-top: 10%">
-        <!-- Første avatar med 18x18 størrelse og rundt -->
+        <!-- Første avatar med 175x175 størrelse og rundt -->
         <img src="images/avatar.png" alt="Millalot" class="avatar">
         <h1>Millalot</h1>
         <p>Find mig på sociale medier</p>
-        <a class="button button-discord" href="https://discord.gg/QtwCzCCmEs" target="_blank" rel="noopener"><img class="icon avatar" src="icons/discord.svg" alt="Discord Logo">Discord</a><br>
-        <a class="button button-Tiktok" href="https://www.tiktok.com/@millalot" target="_blank" rel="noopener"><img class="icon avatar" src="icons/tiktok.svg" alt="Tiktok Logo">Tiktok</a><br>
-        <a class="button button-instagram" href="https://www.instagram.com/millalot" target="_blank" rel="noopener"><img class="icon avatar" src="icons/instagram.svg" alt="Instagram Logo">Instagram</a><br>
-        <a class="button button-twitch" href="https://www.twitch.tv/Millalot12" target="_blank" rel="noopener"><img class="icon avatar" src="icons/twitch.svg" alt="Twitch Logo">Twitch</a><br>
+        <a class="button button-discord" href="https://discord.gg/QtwCzCCmEs" target="_blank" rel="noopener">
+            <img class="icon" src="icons/discord.svg" alt="Discord Logo">Discord
+        </a><br>
+        <a class="button button-Tiktok" href="https://www.tiktok.com/@millalot" target="_blank" rel="noopener">
+            <img class="icon" src="icons/tiktok.svg" alt="Tiktok Logo">Tiktok
+        </a><br>
+        <a class="button button-instagram" href="https://www.instagram.com/millalot" target="_blank" rel="noopener">
+            <img class="icon" src="icons/instagram.svg" alt="Instagram Logo">Instagram
+        </a><br>
+        <a class="button button-twitch" href="https://www.twitch.tv/Millalot12" target="_blank" rel="noopener">
+            <img class="icon" src="icons/twitch.svg" alt="Twitch Logo">Twitch
+        </a><br>
       </div>
     </div>
   </div>
