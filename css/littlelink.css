@@ -453,4 +453,15 @@ button:hover {
 body {
     background: linear-gradient(to right, #b9563d, #2c45d4);
   }
+img {
+    max-width: 100%; /* Sørger for, at billedet ikke bliver større end sin container */
+    height: auto;    /* Bevarer billedets proportioner */
+}
+
+img.avatar {
+    width: 15px; /* Sæt en fast bredde på avataren */
+    height: 15px; /* Sæt en fast højde på avataren */
+    border-radius: 50%; /* Gør billedet rundt (valgfrit) */
+}
+
   
