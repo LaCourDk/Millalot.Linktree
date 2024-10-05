@@ -1,7 +1,7 @@
 /* Stil for billeder (inkl. avatars) */
 .avatar {
-  width: 18px;   /* 20% større end før */
-  height: 18px;
+  width: 175px;   /* 20% større end før */
+  height: 175px;
   border-radius: 50%; /* Gør billedet rundt */
 }
 
