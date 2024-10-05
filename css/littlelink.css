@@ -1,34 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Millalot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/littlelink.css">
-  <link rel="icon" type="image/png" href="images/avatar.png">
-  <style>
-    /* Stil for billeder (inkl. avatars) */
-    .avatar {
-      width: 15px;   /* Sæt bredde til 15px */
-      height: 15px;  /* Sæt højde til 15px */
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="column" style="margin-top: 10%">
-        <!-- Første avatar med 15x15 størrelse -->
-        <img src="images/avatar.png" alt="Millalot" class="avatar">
-        <h1>Millalot</h1>
-        <p>Find mig på sociale medier</p>
-        <a class="button button-discord" href="https://discord.gg/QtwCzCCmEs" target="_blank" rel="noopener"><img class="icon avatar" src="icons/discord.svg" alt="Discord Logo">Discord</a><br>
-        <a class="button button-Tiktok" href="https://www.tiktok.com/@millalot" target="_blank" rel="noopener"><img class="icon avatar" src="icons/tiktok.svg" alt="Tiktok Logo">Tiktok</a><br>
-        <a class="button button-instagram" href="https://www.instagram.com/millalot" target="_blank" rel="noopener"><img class="icon avatar" src="icons/instagram.svg" alt="Instagram Logo">Instagram</a><br>
-        <a class="button button-twitch" href="https://www.twitch.tv/Millalot12" target="_blank" rel="noopener"><img class="icon avatar" src="icons/twitch.svg" alt="Twitch Logo">Twitch</a><br>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+/* Stil for billeder (inkl. avatars) */
+.avatar {
+  width: 15px;   /* Sæt bredde til 15px */
+  height: 15px;  /* Sæt højde til 15px */
+}
+
+/* Resten af din eksisterende CSS */
+body {
+  background-color: #292929;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 64px;
+}
+
+@media (min-width: 550px) {
+  h1 {
+    font-size: 48px;
+    line-height: 96px;
+  }
+}
+
+/* Knappestil for sociale medier */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  width: 300px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.1px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button.button-discord {
+  background-color: #5865F2;
+  color: #FFFFFF;
+}
+.button.button-Tiktok {
+  background-color: #69C9D0;
+  color: #FFFFFF;
+}
+.button.button-instagram {
+  background-image: linear-gradient(-135deg, #1400c8, #b900b4, #f50000);
+  color: #FFFFFF;
+}
+.button.button-twitch {
+  background-color: #9146ff;
+  color: #FFFFFF;
+}
+
+/* Resten af dine knapstyles */
