@@ -1,12 +1,13 @@
 /* Stil for billeder (inkl. avatars) */
 .avatar {
-  width: 15px;   /* Sæt bredde til 15px */
-  height: 15px;  /* Sæt højde til 15px */
+  width: 18px;   /* 20% større end før */
+  height: 18px;
+  border-radius: 50%; /* Gør billedet rundt */
 }
 
 /* Resten af din eksisterende CSS */
 body {
-  background-color: #292929;
+  background: linear-gradient(135deg, #141e30, #243b55); /* To farver i baggrunden */
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
