@@ -426,3 +426,31 @@ button:hover {
 .button.button-twitch:hover {
     filter: brightness(90%)
 }
+.button.button-Tiktok {
+    color: #FFFFFF;
+    background-color: #dc36ae; /* TikTok farve */
+    width: 300px; /* Aflang boks */
+    height: 50px;
+    border-radius: 10px; /* Runde hjørner */
+    text-align: center;
+    line-height: 50px; /* Vertikal centrering */
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid white; /* Valgfri kant */
+    margin-bottom: 1rem;
+}
+
+.button.button-Tiktok:focus,
+.button.button-Tiktok:hover {
+    filter: brightness(90%);
+}
+
+.button.button-Tiktok img {
+    vertical-align: middle;
+    margin-right: 10px; /* Afstand mellem ikon og tekst */
+}
+body {
+    background: linear-gradient(to right, #b9563d, #2c45d4);
+  }
+  
