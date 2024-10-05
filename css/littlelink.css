@@ -1,8 +1,15 @@
 /* Stil for billeder (inkl. avatars) */
 .avatar {
-  width: 175px;   /* 20% større end før */
+  width: 175px; /* 20% større end før */
   height: 175px;
   border-radius: 50%; /* Gør billedet rundt */
+}
+
+/* Stil for ikonene */
+.icon {
+  width: 30px; /* Fast bredde for ikoner */
+  height: 30px; /* Fast højde for ikoner */
+  vertical-align: middle; /* Justerer ikonerne med teksten */
 }
 
 /* Resten af din eksisterende CSS */
@@ -50,14 +57,17 @@ h1 {
   background-color: #5865F2;
   color: #FFFFFF;
 }
+
 .button.button-Tiktok {
   background-color: #69C9D0;
   color: #FFFFFF;
 }
+
 .button.button-instagram {
   background-image: linear-gradient(-135deg, #1400c8, #b900b4, #f50000);
   color: #FFFFFF;
 }
+
 .button.button-twitch {
   background-color: #9146ff;
   color: #FFFFFF;
